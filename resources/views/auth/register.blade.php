@@ -32,7 +32,7 @@
             </div>
             <div class="mt-4">
                 <x-jet-label for="role_id" value="{{ __('Register as:') }}" />
-                <select name="role" id="user_role" class="block mt-1 w-full">
+                <select name="user" id="user_role" class="block mt-1 w-full">
                     <option value="1">Customer</option>
                     <option value="2">Shop Owner</option>
                 </select>
