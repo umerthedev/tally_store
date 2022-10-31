@@ -34,4 +34,8 @@ class HomeController extends Controller
            return redirect()->route('login');
        }
     }
+    public function index()
+    {
+      return view('home');
+    }
 }
