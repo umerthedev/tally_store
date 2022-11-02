@@ -18,7 +18,19 @@
         </div>
         <div id="layoutSidenav_content">
 
-            @include('admin.content')
+
+            <span style="padding-left: 20px; padding-top: 20px;">Layouts>users</span>
+
+
+
+
+
+
+
+
+
+
+
 
 
             @include('admin.footer')

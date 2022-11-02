@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,5 +27,16 @@ Route::middleware([
     })->name('dashboard');
 });
 
+Route::get('/showusers',[AdminController::class, 'showusers']);
+
+
+
+
+
+
+
+
+
 Route::get('/',[HomeController::class,'index']);
 Route::get('/home',[HomeController::class,'redirect']);
+
