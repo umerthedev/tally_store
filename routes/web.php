@@ -28,6 +28,7 @@ Route::middleware([
 });
 
 Route::get('/showusers',[AdminController::class, 'showusers']);
+Route::get('/delete_user/{id}',[AdminController::class, 'delete_user']);
 
 
 
