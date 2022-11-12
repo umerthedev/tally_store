@@ -27,14 +27,14 @@ Route::middleware([
     })->name('dashboard');
 });
 
+
+//Customers Routes
 Route::get('/showusers',[AdminController::class, 'showusers']);
 Route::get('/delete_user/{id}',[AdminController::class, 'delete_user']);
 
-
-
-
-
-
+//Shop Owner Routes
+Route::get('/showshop',[AdminController::class,'shopowner']);
+Route::get('/delete_shopowner/{id}',[AdminController::class,'delete_shopowner']);
 
 
 

@@ -6,7 +6,7 @@
     <meta name="author" content="Themezhub" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Workplex - Creative Job Board HTML Template</title>
+    <title>Tally Store</title>
 
     <!-- Custom CSS -->
     <link href="customer_assets/assets/css/styles.css" rel="stylesheet">
@@ -33,7 +33,7 @@
             <div class="container">
                 <nav id="navigation" class="navigation navigation-landscape">
                     <div class="nav-header">
-                        <a class="nav-brand" href="#">
+                        <a class="nav-brand" href="{{ url('/') }}">
                             <img src="customer_assets/assets/img/logo.png" class="logo" alt="" />
                         </a>
                         <div class="nav-toggle"></div>
@@ -55,63 +55,6 @@
                             <li><a href="{{ url('/') }}">Home</a>
                             </li>
 
-                            <li><a href="javascript:void(0);">Find Job</a>
-                                <ul class="nav-dropdown nav-submenu">
-                                    <li><a href="job-search-v1.html">Job Search V1</a></li>
-                                    <li><a href="job-search-v2.html">Job Search V2</a></li>
-                                    <li><a href="job-search-v3.html">Job Search V3</a></li>
-                                    <li><a href="job-list-v1.html">Job Search V4</a></li>
-                                    <li><a href="job-list-v2.html">Job Search V5</a></li>
-                                    <li><a href="job-list-v3.html">Job Search V6</a></li>
-                                    <li><a href="javascript:void(0);">Map Styles</a>
-                                        <ul class="nav-dropdown nav-submenu">
-                                            <li><a href="job-half-map.html">Search On Map V1</a></li>
-                                            <li><a href="job-half-map-v2.html">Search On Map V2</a></li>
-                                            <li><a href="job-search-map-v1.html">Search On Map V3</a></li>
-                                            <li><a href="job-search-map-v2.html">Search On Map V4</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="javascript:void(0);">Single Job</a>
-                                        <ul class="nav-dropdown nav-submenu">
-                                            <li><a href="single-job-1.html">Single Job V1</a></li>
-                                            <li><a href="single-job-2.html">Single Job V2</a></li>
-                                            <li><a href="single-job-3.html">Single Job V3</a></li>
-                                            <li><a href="single-job-4.html">Single Job V4</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li><a href="javascript:void(0);">Candidates</a>
-                                <ul class="nav-dropdown nav-submenu">
-                                    <li><a href="browse-jobs.html">Browse Jobs</a></li>
-                                    <li><a href="browse-resumes.html">Browse Resumes</a></li>
-                                    <li><a href="browse-category.html">Browse Categories</a></li>
-                                    <li><a href="candidate-detail.html">Candidate Detail</a></li>
-                                    <li><a href="candidate-dashboard.html">Candidate Dashboard</a></li>
-                                </ul>
-                            </li>
-
-                            <li><a href="javascript:void(0);">Employers</a>
-                                <ul class="nav-dropdown nav-submenu">
-                                    <li><a href="browse-employers.html">Browse Employers V1</a></li>
-                                    <li><a href="browse-employers-list.html">Browse Employers V2</a></li>
-                                    <li><a href="employer-detail.html">Employer Detail</a></li>
-                                    <li><a href="employer-dashboard.html">Employer Dashboard</a></li>
-                                </ul>
-                            </li>
-
-                            <li><a href="javascript:void(0);">Pages</a>
-                                <ul class="nav-dropdown nav-submenu">
-                                    <li><a href="blog.html">Blog Style</a></li>
-                                    <li><a href="about-us.html">About Us</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                    <li><a href="404.html">404 Page</a></li>
-                                    <li><a href="privacy.html">Privacy Policy</a></li>
-                                    <li><a href="faq.html">FAQs</a></li>
-                                    <li><a href="docs.html">Docs</a></li>
-                                </ul>
-                            </li>
 
                         </ul>
 
@@ -160,16 +103,7 @@
                         <ul data-submenu-title="Main Navigation">
                             <li class="active"><a href="employer-dashboard.html"><i
                                         class="lni lni-dashboard mr-2"></i>Dashboard</a></li>
-                            <li><a href="dashboard-post-job.html"><i class="lni lni-files mr-2"></i>Post New Job</a>
-                            </li>
-                            <li><a href="dashboard-manage-jobs.html"><i class="lni lni-add-files mr-2"></i>Manage
-                                    Jobs</a></li>
-                            <li><a href="dashboard-manage-applications.html"><i
-                                        class="lni lni-briefcase mr-2"></i>Manage Applicants</a></li>
-                            <li><a href="dashboard-shortlisted-resume.html"><i
-                                        class="lni lni-bookmark mr-2"></i>BookmarkResumes<span
-                                        class="count-tag bg-warning">4</span></a></li>
-                            <li><a href="dashboard-packages.html"><i class="lni lni-mastercard mr-2"></i>Packages</a>
+                            <li><a href="dashboard-post-job.html"><i class="lni lni-files mr-2"></i>Order Details</a>
                             </li>
                             <li><a href="dashboard-messages.html"><i class="lni lni-envelope mr-2"></i>Messages<span
                                         class="count-tag">4</span></a></li>
@@ -191,10 +125,10 @@
                 <div class="dashboard-tlbar d-block mb-5">
                     <div class="row">
                         <div class="colxl-12 col-lg-12 col-md-12">
-                            <h1 class="ft-medium">Hello, Adam Jesuf</h1>
+                            <h1 class="ft-medium">Hello, {{ Auth::user()->name }}</h1>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item text-muted"><a href="#">Home</a></li>
+                                    <li class="breadcrumb-item text-muted"><a href="{{ url('/') }}">Home</a></li>
                                     <li class="breadcrumb-item"><a href="#" class="theme-cl">Dashboard</a></li>
                                 </ol>
                             </nav>
