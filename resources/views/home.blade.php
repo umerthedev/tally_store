@@ -6,7 +6,7 @@
     <meta name="author" content="Themezhub" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Workplex - Creative Job Board HTML Template</title>
+    <title>Tally Store</title>
 
     <!-- Custom CSS -->
     <link href="customer_assets/assets/css/styles.css" rel="stylesheet" />
@@ -115,7 +115,7 @@
                             <br />
                             <h1 class="banner_title ft-bold mb-1">
                                 Explore More Than<br /><span class="text-danger">7840+</span>
-                                Jobs
+                                Shops
                             </h1>
                             <p class="fs-md ft-regular">
                                 At vero eos et accusamus et iusto odio dignissimos ducimus qui
@@ -127,7 +127,7 @@
                                 <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
                                     <div class="form-group position-relative">
                                         <input type="text" class="form-control lg form-ico border"
-                                            placeholder="Job Title, Keyword or Company" />
+                                            placeholder="Shop Name" />
                                         <i class="bnc-ico lni lni-search-alt"></i>
                                     </div>
                                     <div class="form-group position-relative">
@@ -138,8 +138,8 @@
                                     <div class="form-group position-relative">
                                         <select class="custom-select lg border">
                                             <option value="1">Choose Categories</option>
-                                            <option value="2">Information Technology</option>
-                                            <option value="3">Cloud Computing</option>
+                                            <option value="2">Super Shop</option>
+                                            <option value="3">General Store</option>
                                             <option value="4">Engineering Services</option>
                                             <option value="5">Healthcare/Pharma</option>
                                             <option value="6">Telecom/ Internet</option>
@@ -149,7 +149,7 @@
                                     <div class="form-group position-relative">
                                         <button class="btn full-width custom-height-lg bg-danger text-white fs-md"
                                             type="button">
-                                            Find Job
+                                            Find Shop
                                         </button>
                                     </div>
                                 </div>
@@ -166,6 +166,84 @@
         </div>
         <!-- ======================= Home Banner ======================== -->
 
+
+        <!-- ======================= Blog Start ============================ -->
+        <section class="space min">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <div class="sec_title position-relative text-center mb-4">
+                            <h6 class="text-muted mb-0">Shop In Your Area</h6>
+                            <h2 class="ft-bold">
+                                Pickup Your <span class="text-danger">Favorite Shops</span>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <!-- Single Item -->
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                        <div class="blg_grid_box">
+                            <div class="blg_grid_thumb">
+                                <a href="blog-detail.html"><img src="https://via.placeholder.com/1200x800"
+                                        class="img-fluid" alt="" /></a>
+                            </div>
+                            <div class="blg_grid_caption">
+                                <div class="blg_tag"><span>Marketing</span></div>
+                                <div class="blg_title">
+                                    <h4>
+                                        <a href="blog-detail.html">How To Register &amp; Enrolled on SkillUp Step by
+                                            Step?</a>
+                                    </h4>
+                                </div>
+                                <div class="blg_desc">
+                                    <p>
+                                        At vero eos et accusamus et iusto odio dignissimos ducimus
+                                        qui blanditiis praesentium voluptatum
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="crs_grid_foot">
+                                <div
+                                    class="crs_flex d-flex align-items-center justify-content-between br-top px-3 py-2">
+                                    <div class="crs_fl_first">
+                                        <div class="crs_tutor">
+                                            <div class="crs_tutor_thumb">
+                                                <a href="instructor-detail.html"><img
+                                                        src="https://via.placeholder.com/500x500"
+                                                        class="img-fluid circle" width="35" alt="" /></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="crs_fl_last">
+                                        <div class="foot_list_info">
+                                            <ul>
+                                                <li>
+                                                    <div class="elsio_ic">
+                                                        <i class="fa fa-eye text-success"></i>
+                                                    </div>
+                                                    <div class="elsio_tx">10k Views</div>
+                                                </li>
+                                                <li>
+                                                    <div class="elsio_ic">
+                                                        <i class="fa fa-clock text-warning"></i>
+                                                    </div>
+                                                    <div class="elsio_tx">10 July 2021</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- ======================= Blog Start ============================ -->
 
 
         <!-- ======================= All category ======================== -->
@@ -396,88 +474,6 @@
             </div>
         </section>
         <!-- ======================= All category ======================== -->
-
-
-
-
-
-        <!-- ======================= Blog Start ============================ -->
-        <section class="space min">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                        <div class="sec_title position-relative text-center mb-4">
-                            <h6 class="text-muted mb-0">Shop In Your Area</h6>
-                            <h2 class="ft-bold">
-                                Pickup Your <span class="text-danger">Favorite Shops</span>
-                            </h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center">
-                    <!-- Single Item -->
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                        <div class="blg_grid_box">
-                            <div class="blg_grid_thumb">
-                                <a href="blog-detail.html"><img src="https://via.placeholder.com/1200x800"
-                                        class="img-fluid" alt="" /></a>
-                            </div>
-                            <div class="blg_grid_caption">
-                                <div class="blg_tag"><span>Marketing</span></div>
-                                <div class="blg_title">
-                                    <h4>
-                                        <a href="blog-detail.html">How To Register &amp; Enrolled on SkillUp Step by
-                                            Step?</a>
-                                    </h4>
-                                </div>
-                                <div class="blg_desc">
-                                    <p>
-                                        At vero eos et accusamus et iusto odio dignissimos ducimus
-                                        qui blanditiis praesentium voluptatum
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="crs_grid_foot">
-                                <div
-                                    class="crs_flex d-flex align-items-center justify-content-between br-top px-3 py-2">
-                                    <div class="crs_fl_first">
-                                        <div class="crs_tutor">
-                                            <div class="crs_tutor_thumb">
-                                                <a href="instructor-detail.html"><img
-                                                        src="https://via.placeholder.com/500x500"
-                                                        class="img-fluid circle" width="35" alt="" /></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="crs_fl_last">
-                                        <div class="foot_list_info">
-                                            <ul>
-                                                <li>
-                                                    <div class="elsio_ic">
-                                                        <i class="fa fa-eye text-success"></i>
-                                                    </div>
-                                                    <div class="elsio_tx">10k Views</div>
-                                                </li>
-                                                <li>
-                                                    <div class="elsio_ic">
-                                                        <i class="fa fa-clock text-warning"></i>
-                                                    </div>
-                                                    <div class="elsio_tx">10 July 2021</div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </section>
-        <!-- ======================= Blog Start ============================ -->
 
         <!-- ======================= Newsletter Start ============================ -->
         <section class="space bg-cover"
