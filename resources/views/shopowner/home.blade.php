@@ -135,6 +135,12 @@
                         </div>
                     </div>
                 </div>
+                <div class="form-group position-relative ">
+                    <a href="{{ url('add_shopinfo') }}">
+                        <button class="btn full-width custom-height-lg bg-dark text-white rounded" type="button">
+                            Add Shop
+                        </button></a>
+                </div>
 
                 <div class="dashboard-widg-bar d-block">
                     <div class="row">
@@ -339,20 +345,7 @@
     <!-- ============================================================== -->
 
     <!-- ============================================================== -->
-    <!-- All Jquery -->
-    <!-- ============================================================== -->
-    <script src="customer_assets/assets/js/jquery.min.js"></script>
-    <script src="customer_assets/assets/js/popper.min.js"></script>
-    <script src="customer_assets/assets/js/bootstrap.min.js"></script>
-    <script src="customer_assets/assets/js/slick.js"></script>
-    <script src="customer_assets/assets/js/slider-bg.js"></script>
-    <script src="customer_assets/assets/js/smoothproducts.js"></script>
-    <script src="customer_assets/assets/js/snackbar.min.js"></script>
-    <script src="customer_assets/assets/js/jQuery.style.switcher.js"></script>
-    <script src="customer_assets/assets/js/custom.js"></script>
-    <!-- ============================================================== -->
-    <!-- This page plugins -->
-    <!-- ============================================================== -->
+    @include('shopowner.script')
 
 </body>
 

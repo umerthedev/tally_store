@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ShopOwnerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,6 +36,8 @@ Route::get('/delete_user/{id}',[AdminController::class, 'delete_user']);
 //Shop Owner Routes
 Route::get('/showshop',[AdminController::class,'shopowner']);
 Route::get('/delete_shopowner/{id}',[AdminController::class,'delete_shopowner']);
+//add shop info
+Route::get('/add_shopinfo',[ShopOwnerController::class,'add_shopinfo']);
 
 
 
