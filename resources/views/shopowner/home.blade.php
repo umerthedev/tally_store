@@ -99,7 +99,7 @@
                 <div class="dashboard-nav">
                     <div class="dashboard-inner">
                         <ul data-submenu-title="Main Navigation">
-                            <li class="active"><a href="employer-dashboard.html"><i
+                            <li class="active"><a href="{{ url('/home') }}"><i
                                         class="lni lni-dashboard mr-2"></i>Dashboard</a></li>
                             <li><a href="dashboard-post-job.html"><i class="lni lni-files mr-2"></i>Post New Offer</a>
                             </li>

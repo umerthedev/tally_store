@@ -6,7 +6,7 @@
     <meta name="author" content="Themezhub" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Workplex - Creative Job Board HTML Template</title>
+    <title>Tally Store</title>
 
     <!-- Custom CSS -->
     <link href="customer_assets/assets/css/styles.css" rel="stylesheet">
@@ -99,7 +99,7 @@
                 <div class="dashboard-nav">
                     <div class="dashboard-inner">
                         <ul data-submenu-title="Main Navigation">
-                            <li class="active"><a href="employer-dashboard.html"><i
+                            <li class="active"><a href="{{ url('/home') }}"><i
                                         class="lni lni-dashboard mr-2"></i>Dashboard</a></li>
                             <li><a href="dashboard-post-job.html"><i class="lni lni-files mr-2"></i>Post New Offer</a>
                             </li>
@@ -137,28 +137,105 @@
                         </div>
                     </div>
                 </div>
-                <div class="form-group position-relative ">
+                {{-- <div class="form-group position-relative ">
                     <a href="{{ url('add_shopinfo') }}">
                         <button class="btn full-width custom-height-lg bg-dark text-white rounded" type="button">
                             Add Shop
                         </button></a>
+                </div> --}}
+                <div class="dashboard-widg-bar d-block">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12">
+                            <div class="_dashboard_content bg-white rounded mb-4">
+                                <div class="_dashboard_content_header br-bottom py-3 px-3">
+                                    <div class="_dashboard__header_flex">
+                                        <h4 class="mb-0 ft-medium fs-md"><i
+                                                class="fa fa-file mr-1 theme-cl fs-sm"></i>Add Shop Info</h4>
+                                    </div>
+                                </div>
+
+                                <div class="_dashboard_content_body py-3 px-3">
+                                    <form class="row">
+                                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                                            <div class="custom-file avater_uploads">
+                                                <input type="file" class="custom-file-input" id="customFile">
+                                                <label class="custom-file-label" for="customFile"><i
+                                                        class="fa fa-user"></i></label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12">
+                                            <div class="row">
+                                                <div class="col-xl-6 col-lg-6">
+                                                    <div class="form-group">
+                                                        <label class="text-dark ft-medium">Shop Name</label>
+                                                        <input type="text" class="form-control rounded"
+                                                            placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-6 col-lg-6">
+                                                    <div class="form-group">
+                                                        <label class="text-dark ft-medium">Shop Address</label>
+                                                        <input type="text" class="form-control rounded"
+                                                            placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-6 col-lg-6">
+                                                    <div class="form-group">
+                                                        <label class="text-dark ft-medium">Shop category</label>
+                                                        <select class="form-control rounded">
+                                                            <option>Snacks & Instant Foods</option>
+                                                            <option>Home Care & Cleaning</option>
+                                                            <option>Bread, Biscuits & Cake</option>
+                                                            <option>Personal Care</option>
+                                                            <option>Baby Food & Care</option>
+                                                            <option>Baby Food & Care</option>
+                                                            <option>Fruits & Vegetables</option>
+                                                            <option>Fashion & Lifestyles</option>
+                                                            <option>Digital Gift Card</option>
+                                                            <option>Milk & Dairy Product</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-6 col-lg-6">
+                                                    <div class="form-group">
+                                                        <label class="text-dark ft-medium">Email</label>
+                                                        <input type="email" class="form-control rounded"
+                                                            value="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-12 col-lg-12">
+                                                    <div class="form-group">
+                                                        <label class="text-dark ft-medium">About Shop</label>
+                                                        <textarea class="form-control with-light" placeholder="Resume Content"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-
-
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <button type="submit" class="btn btn-md ft-medium text-light rounded theme-bg">Save &
+                            Preview</button>
+                    </div>
+                </div>
                 <!-- footer -->
                 <div class="row">
                     <div class="col-md-12">
                         <div class="py-3">© 2022 Workplex. Designd By ThemezHub.</div>
                     </div>
                 </div>
-
             </div>
-
         </div>
-        <!-- ======================= dashboard Detail End ======================== -->
+    </div>
+    <!-- ======================= dashboard Detail End ======================== -->
 
-        <a id="back2Top" class="top-scroll" title="Back to top" href="#"><i class="ti-arrow-up"></i></a>
+    <a id="back2Top" class="top-scroll" title="Back to top" href="#"><i class="ti-arrow-up"></i></a>
 
 
     </div>
