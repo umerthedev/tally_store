@@ -36,8 +36,14 @@ Route::get('/delete_user/{id}',[AdminController::class, 'delete_user']);
 //Shop Owner Routes
 Route::get('/showshop',[AdminController::class,'shopowner']);
 Route::get('/delete_shopowner/{id}',[AdminController::class,'delete_shopowner']);
+
 //add shop info
 Route::get('/add_shopinfo',[ShopOwnerController::class,'add_shopinfo']);
+
+//category routes
+Route::get('/add_category',[AdminController::class,'add_category']);
+//save category
+Route::post('/save_category',[AdminController::class,'save_category']);
 
 
 

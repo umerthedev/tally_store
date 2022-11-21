@@ -111,11 +111,8 @@
                         <ul data-submenu-title="My Accounts">
                             <li><a href="dashboard-my-profile.html"><i class="lni lni-user mr-2"></i>My Profile </a>
                             </li>
-                            <li><a href="dashboard-change-password.html"><i class="lni lni-lock-alt mr-2"></i>Change
-                                    Password</a></li>
-                            <li><a href="javascript:void(0);"><i class="lni lni-trash-can mr-2"></i>Delete Account</a>
+                            <li><a href="{{ route('logout') }}"><i class="lni lni-power-switch mr-2"></i>Log Out</a>
                             </li>
-                            <li><a href="index.html"><i class="lni lni-power-switch mr-2"></i>Log Out</a></li>
                         </ul>
                     </div>
                 </div>

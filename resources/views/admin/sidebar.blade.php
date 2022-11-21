@@ -56,9 +56,9 @@
                 </nav>
             </div>
             <div class="sb-sidenav-menu-heading">Addons</div>
-            <a class="nav-link" href="charts.html">
+            <a class="nav-link" href="{{ url('/add_category') }}">
                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                Charts
+                Add category
             </a>
             <a class="nav-link" href="tables.html">
                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
