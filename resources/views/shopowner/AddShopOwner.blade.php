@@ -170,41 +170,91 @@
                                                             placeholder="">
                                                     </div>
                                                 </div>
+                                                @if (Auth::user()->address)
+                                                    <div class="col-xl-6 col-lg-6">
+                                                        <div class="form-group">
+                                                            <label class="text-dark ft-medium">Shop Address</label>
+                                                            <input type="text" class="form-control rounded"
+                                                                placeholder="" value="{{ Auth::user()->address }}"
+                                                                disabled>
+                                                        </div>
+                                                    </div>
+                                                @else
+                                                    <div class="col-xl-6 col-lg-6">
+                                                        <div class="form-group">
+                                                            <label class="text-dark ft-medium">Shop Address</label>
+                                                            <input type="text" class="form-control rounded"
+                                                                placeholder="">
+                                                        </div>
+                                                    </div>
+                                                @endif
+
+                                                @if (Auth::user()->phone)
+                                                    <div class="col-xl-6 col-lg-6">
+                                                        <div class="form-group">
+                                                            <label class="text-dark ft-medium">Shop Phone</label>
+                                                            <input type="text" class="form-control rounded"
+                                                                placeholder="" value="{{ Auth::user()->phone }}"
+                                                                disabled>
+                                                        </div>
+                                                    </div>
+                                                @else
+                                                    <div class="col-xl-6 col-lg-6">
+                                                        <div class="form-group">
+                                                            <label class="text-dark ft-medium">Shop Phone</label>
+                                                            <input type="text" class="form-control rounded"
+                                                                placeholder="">
+                                                        </div>
+                                                    </div>
+                                                @endif
+
                                                 <div class="col-xl-6 col-lg-6">
                                                     <div class="form-group">
-                                                        <label class="text-dark ft-medium">Shop Address</label>
+                                                        <label class="text-dark ft-medium">Emergency Number</label>
                                                         <input type="text" class="form-control rounded"
-                                                            placeholder="">
+                                                            placeholder="Optional">
                                                     </div>
                                                 </div>
                                                 <div class="col-xl-6 col-lg-6">
+
                                                     <div class="form-group">
+
                                                         <label class="text-dark ft-medium">Shop category</label>
+
                                                         <select class="form-control rounded">
-                                                            <option>Snacks & Instant Foods</option>
-                                                            <option>Home Care & Cleaning</option>
-                                                            <option>Bread, Biscuits & Cake</option>
-                                                            <option>Personal Care</option>
-                                                            <option>Baby Food & Care</option>
-                                                            <option>Baby Food & Care</option>
-                                                            <option>Fruits & Vegetables</option>
-                                                            <option>Fashion & Lifestyles</option>
-                                                            <option>Digital Gift Card</option>
-                                                            <option>Milk & Dairy Product</option>
+                                                            @forelse ($category as $cat)
+                                                                <option>{{ $cat->category_name }}</option>
+                                                            @empty
+                                                                <option>No Category</option>
+                                                            @endforelse
+
                                                         </select>
+
                                                     </div>
+
                                                 </div>
-                                                <div class="col-xl-6 col-lg-6">
-                                                    <div class="form-group">
-                                                        <label class="text-dark ft-medium">Email</label>
-                                                        <input type="email" class="form-control rounded"
-                                                            value="">
+                                                @if (Auth::user()->email)
+                                                    <div class="col-xl-6 col-lg-6">
+                                                        <div class="form-group">
+                                                            <label class="text-dark ft-medium">Email</label>
+                                                            <input type="email" class="form-control rounded"
+                                                                value="{{ Auth::user()->email }}" disabled>
+                                                        </div>
                                                     </div>
-                                                </div>
+                                                @else
+                                                    <div class="col-xl-6 col-lg-6">
+                                                        <div class="form-group">
+                                                            <label class="text-dark ft-medium">Email</label>
+                                                            <input type="email" class="form-control rounded"
+                                                                value="Optional">
+                                                        </div>
+                                                    </div>
+                                                @endif
+
                                                 <div class="col-xl-12 col-lg-12">
                                                     <div class="form-group">
                                                         <label class="text-dark ft-medium">About Shop</label>
-                                                        <textarea class="form-control with-light" placeholder="Resume Content"></textarea>
+                                                        <textarea class="form-control with-light" placeholder="Optional"></textarea>
                                                     </div>
                                                 </div>
                                             </div>

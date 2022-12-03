@@ -135,7 +135,7 @@
                 <div class="form-group position-relative ">
                     <a href="{{ url('add_shopinfo') }}">
                         <button class="btn full-width custom-height-lg bg-dark text-white rounded" type="button">
-                            Add Shop
+                            Edit Shop
                         </button></a>
                 </div>
 
