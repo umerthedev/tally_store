@@ -140,6 +140,7 @@
                             Add Shop
                         </button></a>
                 </div> --}}
+
                 <div class="dashboard-widg-bar d-block">
                     <div class="row">
                         <div class="col-xl-12 col-lg-12 col-md-12">
@@ -151,11 +152,15 @@
                                     </div>
                                 </div>
 
+
                                 <div class="_dashboard_content_body py-3 px-3">
-                                    <form class="row">
+                                    <form action="{{ url('adduserinfo') }}" method="post"
+                                        enctype="multipart/form-data">
+                                        @csrf
                                         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
                                             <div class="custom-file avater_uploads">
-                                                <input type="file" class="custom-file-input" id="customFile">
+                                                <input type="file" class="custom-file-input" name="file"
+                                                    id="customFile">
                                                 <label class="custom-file-label" for="customFile"><i
                                                         class="fa fa-user"></i></label>
                                             </div>
@@ -166,8 +171,8 @@
                                                 <div class="col-xl-6 col-lg-6">
                                                     <div class="form-group">
                                                         <label class="text-dark ft-medium">Shop Name</label>
-                                                        <input type="text" class="form-control rounded"
-                                                            placeholder="">
+                                                        <input name="shopname" type="text"
+                                                            class="form-control rounded" placeholder="">
                                                     </div>
                                                 </div>
                                                 @if (Auth::user()->address)
@@ -183,8 +188,8 @@
                                                     <div class="col-xl-6 col-lg-6">
                                                         <div class="form-group">
                                                             <label class="text-dark ft-medium">Shop Address</label>
-                                                            <input type="text" class="form-control rounded"
-                                                                placeholder="">
+                                                            <input name="shopaddress" type="text"
+                                                                class="form-control rounded" placeholder="">
                                                         </div>
                                                     </div>
                                                 @endif
@@ -202,8 +207,8 @@
                                                     <div class="col-xl-6 col-lg-6">
                                                         <div class="form-group">
                                                             <label class="text-dark ft-medium">Shop Phone</label>
-                                                            <input type="text" class="form-control rounded"
-                                                                placeholder="">
+                                                            <input name="phone" type="text"
+                                                                class="form-control rounded" placeholder="">
                                                         </div>
                                                     </div>
                                                 @endif
@@ -211,8 +216,8 @@
                                                 <div class="col-xl-6 col-lg-6">
                                                     <div class="form-group">
                                                         <label class="text-dark ft-medium">Emergency Number</label>
-                                                        <input type="text" class="form-control rounded"
-                                                            placeholder="Optional">
+                                                        <input name="ephone" type="text"
+                                                            class="form-control rounded" placeholder="Optional">
                                                     </div>
                                                 </div>
                                                 <div class="col-xl-6 col-lg-6">
@@ -221,7 +226,7 @@
 
                                                         <label class="text-dark ft-medium">Shop category</label>
 
-                                                        <select class="form-control rounded">
+                                                        <select class="form-control rounded" name="category">
                                                             @forelse ($category as $cat)
                                                                 <option>{{ $cat->category_name }}</option>
                                                             @empty
@@ -245,8 +250,8 @@
                                                     <div class="col-xl-6 col-lg-6">
                                                         <div class="form-group">
                                                             <label class="text-dark ft-medium">Email</label>
-                                                            <input type="email" class="form-control rounded"
-                                                                value="Optional">
+                                                            <input name="email" type="email"
+                                                                class="form-control rounded" value="Optional">
                                                         </div>
                                                     </div>
                                                 @endif
@@ -254,12 +259,12 @@
                                                 <div class="col-xl-12 col-lg-12">
                                                     <div class="form-group">
                                                         <label class="text-dark ft-medium">About Shop</label>
-                                                        <textarea class="form-control with-light" placeholder="Optional"></textarea>
+                                                        <textarea name="about" class="form-control with-light" placeholder="Optional"></textarea>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </form>
+
                                 </div>
                             </div>
                         </div>
@@ -267,10 +272,10 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12 col-md-12">
-                        <button type="submit" class="btn btn-md ft-medium text-light rounded theme-bg">Save &
-                            Preview</button>
+                        <button type="submit" class="btn btn-md ft-medium text-light rounded theme-bg">Save</button>
                     </div>
                 </div>
+                </form>
                 <!-- footer -->
                 <div class="row">
                     <div class="col-md-12">

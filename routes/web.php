@@ -39,6 +39,7 @@ Route::get('/delete_shopowner/{id}',[AdminController::class,'delete_shopowner'])
 
 //add shop info
 Route::get('/add_shopinfo',[ShopOwnerController::class,'add_shopinfo']);
+Route::post('/adduserinfo',[ShopOwnerController::class,'adduserinfo']);
 
 //category routes
 Route::get('/add_category',[AdminController::class,'add_category']);
