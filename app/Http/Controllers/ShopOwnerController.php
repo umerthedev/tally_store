@@ -12,10 +12,11 @@ class ShopOwnerController extends Controller
 {
    public function add_shopinfo(){
          $category = Category::all();
+         $userin = userinfo::all();
          $id = Auth::id();
          $user = user::all();
 
-        return view('shopowner.AddShopOwner',compact('category','user'));
+        return view('shopowner.AddShopOwner',compact('category','user','userin'));
    }
 
    // public function addShopinfo(Request $request)
@@ -47,19 +48,25 @@ class ShopOwnerController extends Controller
 
    public function adduserinfo(Request $request)
    {
+      $user = Auth::user();
       $userinfos = new userinfo();
       $userinfos->name = $request->shopname;
-      $userinfos->address = $user->shopaddress;
+      $userinfos->address = $user->address;
       $userinfos->phone = $user->phone;
-      $userinfos->emergency_contact =$request->phone;
+      $userinfos->emergency_contact =$request->ephone;
       $userinfos->email = $user->email;
       $userinfos->shop_category = $request->category;
       $userinfos->aboutshop = $request->about;
+      $userinfos->user_id = $user->id;
 
+     
       $image = $request->file;
-      $image_name = time().'.'.$image->getClientOriginalExtension();
+      if ($image) {
+         $image_name = time().'.'.$image->getClientOriginalExtension();
       $image->move(public_path('images'),$image_name);
       $userinfos->image = $image_name;
+     }
+      
       $userinfos->save();
       return redirect()->back()->with('message','Shop Info Updated successfully');
 
